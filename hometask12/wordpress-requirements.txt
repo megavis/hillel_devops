@@ -1,0 +1,14 @@
+curl
+date
+dom
+ftp
+gd
+iconv
+json
+mbstring
+mysqli
+posix
+sockets
+tokenizer
+xml
+xmlreader

@@ -1,0 +1,34 @@
+[
+	{ "project" : "wordpress",
+	  "config"  : {
+			"sitename": "mysite.local",
+			"siteroot_dir": "/var/www/wordpress",
+			"port" : 80,
+			  "db": {
+			  "username": "mysite",
+		 	  "password": "strongpwd",
+			  "name": "mydb"
+			 },
+			"backup" : {
+			  "depth" : 5,
+		 	  "period": "daily",
+			  "path"  : "/opt/backup"
+			 }}
+	},
+	{ "project" : "wp-dev",
+	  "config"  : {
+			"sitename": "mysite-dev.local",
+			"siteroot_dir": "/var/www/wp-dev",
+			"port" : 8080,
+			  "db": {
+			  "username": "mysite",
+		 	  "password": "notstrongpwd",
+			  "name": "mydevdb"
+			 },
+			"backup" : {
+			  "depth" : 3,
+		 	  "period": "weekly",
+			  "path"  : "/opt/backup"
+			 }}
+	}
+]
